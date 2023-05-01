@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mouseover Image Display</title>
+  <style>
+    #image {
+      display: none;
+    }
+
+    body {
+      background: rgb(131, 58, 180);
+      background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Move your mouse over this text to display an image</h1>
+  <div id="image">
+    <img src="/DhairyaMajmudarNhost.jpg" alt="Image">
+
+  </div>
+  <script>
+    const text = document.querySelector('h1');
+    const image = document.querySelector('#image');
+
+    text.addEventListener('mouseover', () => {
+      image.style.display = 'block';
+    });
+
+    text.addEventListener('mouseout', () => {
+      image.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>

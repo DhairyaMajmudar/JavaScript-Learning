@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: coral;
+}
+
+.header{
+    text-align: center;
+    color: aliceblue;
+    margin: 100px;
+}
+
+h2{
+    margin-top:2em;
+}
+

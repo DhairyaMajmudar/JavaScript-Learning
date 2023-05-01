@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check if a Text is a Number</title>
+	<script type="text/javascript">
+		function checkNumber() {
+			const userInput = document.getElementById("userInput").value;
+			const result = isNaN(userInput) ? "Not a Number" : "Number";
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+    <link rel="stylesheet" href="/que 2.8/style.css">
+</head>
+<body>
+	<h1>Check if a Text is a Number</h1>
+	<p>Enter some text to check if it's a number:</p>
+	<input type="text" id="userInput">
+	<button onclick="checkNumber()">Check</button>
+	<p id="result"></p>
+</body>
+</html>

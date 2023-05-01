@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhairya Majmudar</title>
+    <link rel="stylesheet" href="/que 2.3/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Finbonacci sequence upto <span id="span"> </span> is:</h1>
+        <h2 id="number"></h2>
+    </header>
+
+    <script>
+        let MyNumber = document.getElementById("number")
+        let MySpan = document.getElementById("span")
+
+        let n
+
+        n = prompt("enter your no.")
+
+        function fibonacci(n) {
+            if (n <= 1) {
+                return n;
+            } else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
+        function printFibonacciSeries(n) {
+            for (let i = 0; i < n; i++) {
+
+                MyNumber.textContent = fibonacci(i)
+                console.log(fibonacci(i))
+            }
+        }
+
+        MySpan.textContent = n
+
+
+    </script>
+
+
+</body>
+
+</html>
